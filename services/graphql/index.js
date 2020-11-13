@@ -139,9 +139,15 @@ function loadHTML(data) {
     <div class="repo-details display__flex">
       <div class="language__con">
         <div class="language__color" style="background-color: ${
-          repository.languages.nodes[0].color
+          repository.languages && repository.languages.nodes.length != 0
+            ? repository.languages.nodes[0].color
+            : ""
         }"></div>
-        <div class="language">${repository.languages.nodes[0].name}</div>
+        <div class="language">${
+          repository.languages && repository.languages.nodes.length != 0
+            ? repository.languages.nodes[0].name
+            : "#2ACCA8"
+        }</div>
       </div>
       <div class="star__count__con">
         <div>
