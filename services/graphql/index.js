@@ -1,5 +1,5 @@
 // Graphql Setup
-const token = `58971e2e904ded55eadc5abeb21fec2224b115dc`;
+const token = `<YOUR_ACCESS_TOKEN_HERE>`;
 
 const dice = 3;
 const sides = 6;
